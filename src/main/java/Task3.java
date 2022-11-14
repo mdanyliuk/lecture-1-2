@@ -6,50 +6,6 @@ abstract class Shape {
     abstract double getVolume();
 }
 
-class Cube extends Shape {
-
-    private final double a;
-
-    public Cube(double a) {
-        this.a = a;
-    }
-
-    @Override
-    public double getVolume() {
-        return a * a * a;
-    }
-}
-
-class Sphere extends Shape {
-
-    private final double r;
-
-    public Sphere(double r) {
-        this.r = r;
-    }
-
-    @Override
-    double getVolume() {
-        return Math.PI * 4 * r / 3;
-    }
-}
-
-class Cylinder extends Shape {
-
-    private final double r;
-    private final double h;
-
-    public Cylinder(double r, double h) {
-        this.r = r;
-        this.h = h;
-    }
-
-    @Override
-    double getVolume() {
-        return Math.PI * r * r * h;
-    }
-}
-
 public class Task3 {
 
     /**
